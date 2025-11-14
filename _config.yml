@@ -3,7 +3,6 @@ title_separator: "-"
 name: "Mehrdad Vasheghani Farahani"
 description: "Researcher in Porous Media, Transport Phenomena, and Energy Systems"
 url: "https://mehrdadvasheghanifarahani.github.io"
-theme: "minimal-mistakes-jekyll"
 
 # Enable remote theme (official way)
 remote_theme: "mmistakes/minimal-mistakes@4.24.0"
