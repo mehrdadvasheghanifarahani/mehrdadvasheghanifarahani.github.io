@@ -23,3 +23,32 @@ author:
   avatar: "/assets/images/profile.jpg"
   bio: "Research Fellow in Chemical Engineering – Porous Media, LBM, Energy Storage."
   location: "Manchester, UK"
+
+  links:
+    - label: "Google Scholar"
+      icon: "fas fa-graduation-cap"
+      url: "https://scholar.google.com/citations?hl=en&user=yZ8RnmUAAAAJ&view_op=list_works"
+
+    - label: "LinkedIn"
+      icon: "fab fa-linkedin"
+      url: "https://www.linkedin.com/in/mehrdad-vasheghani-farahani/"
+
+    - label: "GitHub"
+      icon: "fab fa-github"
+      url: "https://github.com/mehrdadvasheghanifarahani"
+
+    - label: "ResearchGate"
+      icon: "fab fa-researchgate"
+      url: "https://www.researchgate.net/profile/Mehrdad-Vasheghani-Farahani?ev=hdr_xprf"
+
+    - label: "Manchester Profile"
+      icon: "fas fa-university"
+      url: "https://research.manchester.ac.uk/en/persons/mehrdad-vasheghani-farahani/"
+
+    - label: "ORCID"
+      icon: "fab fa-orcid"
+      url: "https://orcid.org/0000-0001-9727-7839"
+
+    - label: "Email"
+      icon: "fas fa-envelope"
+      url: "mailto:mehrdad.vasheghanifarahani@manchester.ac.uk"
