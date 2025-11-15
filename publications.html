@@ -11,15 +11,37 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
     <link href="assets/css/style.css" rel="stylesheet">
+
+    <style>
+        .pub-item img {
+            max-height: 70px;
+            width: auto;
+            object-fit: contain;
+            opacity: 0.9;
+            transition: opacity 0.2s ease-in-out;
+        }
+
+        .pub-item img:hover {
+            opacity: 1;
+        }
+
+        .pub-item p {
+            font-size: 0.95rem;
+            line-height: 1.35rem;
+        }
+    </style>
+
 </head>
 
 <body>
+
+    <!-- ======= Header / Navbar ======= -->
 
     <header id="header" class="sticky-top shadow-sm bg-white">
         <nav class="navbar navbar-expand-lg navbar-light bg-white">
             <div class="container">
                 <a class="navbar-brand fw-bold" href="index.html">
-                    <span class="text-primary">Mehrdad</span> V. Farahani
+                    <span class="text-primary">Mehrdad</span> Vasheghani Farahani
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -29,8 +51,6 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ms-auto align-items-lg-center">
                         <li class="nav-item"><a class="nav-link" href="index.html#hero">Home</a></li>
-                        <li class="nav-item"><a class="nav-link" href="index.html#about">About</a></li>
-                        <li class="nav-item"><a class="nav-link" href="index.html#research">Research</a></li>
                         <li class="nav-item"><a class="nav-link active" href="publications.html">Publications</a></li>
                         <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
                         <li class="nav-item"><a class="nav-link" href="news.html">News</a></li>
@@ -46,102 +66,492 @@
 
     <main class="py-5">
         <div class="container">
-            <h1 class="mb-3">Selected publications</h1>
+            <h1 class="mb-3">Publications</h1>
             <p class="text-muted">
-                This page lists a selection of my publications related to transport phenomena, multiphase flow,
-                porous media and net-zero technologies. For a full and up-to-date list, please see my
-                <a href="https://scholar.google.com/citations?user=JnacztIAAAAJ&hl=en" target="_blank">Google Scholar
-                    profile</a>. :contentReference[oaicite:15]{index=15}
+                Below is a list of my journal articles, conference proceedings, and dissertations. For the most up-to-date information, please see my
+                <a href="https://scholar.google.com/citations?user=yZ8RnmUAAAAJ&hl=en" target="_blank">Google Scholar
+                    profile</a>.
+            </p>
+            <p class="text-muted small mb-4">
+                <em>Last updated: November&nbsp;2025.</em>
             </p>
 
             <hr class="my-4">
 
-            <h3 class="h5 mt-4">Journal articles</h3>
-            <ol class="small">
-                <li class="mb-2">
-                    Vasheghani Farahani, M. (2024). Application of Space Renormalisation Technique for Spatiotemporal
-                    Analysis of Effective Thermal Conductivity in Multiphase Porous Materials.
-                    <em>International Communications in Heat and Mass Transfer</em>, 159, 108129.
-                    :contentReference[oaicite:16]{index=16}
+            <!-- Journal Articles -->
+            <h2 class="h4 mt-4">Published journal articles</h2>
+            <ol class="pub-list small" reversed start="15">
+                <li class="mb-3">
+                    <div class="pub-item d-flex align-items-start">
+                        <div class="flex-grow-1">
+                            <strong>Vasheghani Farahani, M.</strong> (2024).
+                            Application of space renormalisation technique for spatiotemporal analysis of effective
+                            thermal conductivity in multiphase porous materials.
+                            <em>International Communications in Heat and Mass Transfer</em>,
+                            159, 108129.
+                        </div>
+                        <div class="flex-shrink-0 ms-2">
+                            <img src="assets/img/logos/elsevier.png" alt="Elsevier" style="max-height: 105px;" class="pub-logo">
+                        </div>
+                    </div>
                 </li>
-                <li class="mb-2">
-                    Lang, C., Chen, Z., Hassanpouryouzband, A., <strong>Vasheghani Farahani, M.</strong>, et al. (2024).
-                    Spontaneous Lifting and Self-Cleaning of Gas Hydrate Crystals.
-                    <em>ACS Nano</em>, 18(49), 33671–33680. :contentReference[oaicite:17]{index=17}
+
+                <li class="mb-3">
+                    <div class="pub-item d-flex align-items-start">
+                        <div class="flex-grow-1">
+                            Lang, C., Chen, Z., <strong>Vasheghani Farahani, M.</strong>, Hassanpouryouzband, A.,
+                            Zhang, L., Zhao, J., &amp; Song, Y. (2024).
+                            Spontaneous lifting and self-cleaning of gas hydrate crystals.
+                            <em>ACS Nano</em>, 18(49), 33671–33680.
+                        </div>
+                        <div class="flex-shrink-0 ms-2">
+                            <img src="assets/img/logos/acs.png" alt="ACS Publications" class="pub-logo">
+                        </div>
+                    </div>
                 </li>
-                <li class="mb-2">
-                    Zhou, T., <strong>Vasheghani Farahani, M.</strong>, An, S., &amp; Niasar, V. (2024). Unravelling
-                    Combined Effect of Pore Geometry and Wettability on Immiscible Displacement Characteristics and
-                    Entry Capillary Pressure.
-                    <em>Physics of Fluids</em>, 36(11), 112129. :contentReference[oaicite:18]{index=18}
+
+                <li class="mb-3">
+                    <div class="pub-item d-flex align-items-start">
+                        <div class="flex-grow-1">
+                            Zhou, T., <strong>Vasheghani Farahani, M.</strong>, An, S., &amp; Niasar, V. (2024).
+                            Unravelling combined effect of pore geometry and wettability on immiscible displacement
+                            characteristics and entry capillary pressure.
+                            <em>Physics of Fluids</em>, 36(11), 112129.
+                        </div>
+                        <div class="flex-shrink-0 ms-2">
+                            <img src="assets/img/logos/aip.png" alt="AIP Publishing" style="max-height: 55px;" class="pub-logo">
+                        </div>
+                    </div>
                 </li>
-                <li class="mb-2">
-                    <strong>Vasheghani Farahani, M.</strong>, &amp; Mousavi Nezhad, M. (2022). On the effect of flow
-                    regime and pore structure on the flow signatures in porous media.
-                    <em>Physics of Fluids</em>, 34(11), 115139. :contentReference[oaicite:19]{index=19}
+
+                <li class="mb-3">
+                    <div class="pub-item d-flex align-items-start">
+                        <div class="flex-grow-1">
+                            <strong>Vasheghani Farahani, M.</strong>, &amp; Mousavi Nezhad, M. (2022).
+                            On the effect of flow regime and pore structure on the flow signatures in porous media.
+                            <em>Physics of Fluids</em>, 34(11), 115139.
+                        </div>
+                        <div class="flex-shrink-0 ms-2">
+                            <img src="assets/img/logos/aip.png" alt="AIP Publishing" style="max-height: 55px;" class="pub-logo">
+                        </div>
+                    </div>
                 </li>
-                <li class="mb-2">
-                    <strong>Vasheghani Farahani, M.</strong>, Hassanpouryouzband, A., Yang, J., &amp; Tohidi, B. (2021).
-                    Development of a coupled geophysical–geothermal scheme for quantification of hydrates in gas
-                    hydrate-bearing permafrost sediments.
-                    <em>Physical Chemistry Chemical Physics</em>, 23(42), 24249–24264.
-                    :contentReference[oaicite:20]{index=20}
+
+                <li class="mb-3">
+                    <div class="pub-item d-flex align-items-start">
+                        <div class="flex-grow-1">
+                            <strong>Vasheghani Farahani, M.</strong>, Hassanpouryouzband, A., Yang, J., &amp;
+                            Tohidi, B. (2021).
+                            Development of a coupled geophysical–geothermal scheme for quantification of hydrates in gas
+                            hydrate-bearing permafrost sediments.
+                            <em>Physical Chemistry Chemical Physics</em>, 23(42), 24249–24264.
+                        </div>
+                        <div class="flex-shrink-0 ms-2">
+                            <img src="assets/img/logos/rsc.png" alt="RSC Publishing" style="max-height: 55px;" class="pub-logo">
+                        </div>
+                    </div>
                 </li>
-                <li class="mb-2">
-                    <strong>Vasheghani Farahani, M.</strong>, Hassanpouryouzband, A., Yang, J., &amp; Tohidi, B. (2021).
-                    Insights into the climate-driven evolution of gas hydrate-bearing permafrost sediments.
-                    <em>RSC Advances</em>, 11(24), 14334–14346. :contentReference[oaicite:21]{index=21}
+
+                <li class="mb-3">
+                    <div class="pub-item d-flex align-items-start">
+                        <div class="flex-grow-1">
+                            <strong>Vasheghani Farahani, M.</strong>, Hassanpouryouzband, A., Yang, J., &amp;
+                            Tohidi, B. (2021).
+                            Insights into the climate-driven evolution of gas hydrate-bearing permafrost sediments:
+                            implications for prediction of environmental impacts and security of energy in cold regions.
+                            <em>RSC Advances</em>, 11(24), 14334–14346.
+                        </div>
+                        <div class="flex-shrink-0 ms-2">
+                            <img src="assets/img/logos/rsc.png" alt="RSC Publishing" style="max-height: 55px;" class="pub-logo">
+                        </div>
+                    </div>
                 </li>
-                <li class="mb-2">
-                    <strong>Vasheghani Farahani, M.</strong>, Foroughi, S., Norouzi, S., &amp; Jamshidi, S. (2019).
-                    Mechanistic Study of Fines Migration in Porous Media Using Lattice Boltzmann Method Coupled with
-                    Rigid Body Physics Engine.
-                    <em>Journal of Energy Resources Technology</em>.
+
+                <li class="mb-3">
+                    <div class="pub-item d-flex align-items-start">
+                        <div class="flex-grow-1">
+                            <strong>Vasheghani Farahani, M.</strong>, Guo, X., Zhang, L., Yang, M.,
+                            Hassanpouryouzband, A., Zhao, J., Yang, J., Song, Y., &amp; Tohidi, B. (2021).
+                            Effect of thermal formation/dissociation cycles on the kinetics of formation and pore-scale
+                            distribution of methane hydrates in porous media: A magnetic resonance imaging study.
+                            <em>Sustainable Energy &amp; Fuels</em>, 5(5), 1567–1583.
+                        </div>
+                        <div class="flex-shrink-0 ms-2">
+                            <img src="assets/img/logos/rsc.png" alt="RSC Publishing" style="max-height: 55px;" class="pub-logo">
+                        </div>
+                    </div>
                 </li>
-                <li class="mb-2">
-                    Hassanpouryouzband, A., <strong>Vasheghani Farahani, M.</strong>, et al. (2020). Gas Hydrates in
-                    Sustainable Chemistry.
-                    <em>Chemical Society Reviews</em>, 49(15), 5225–5309.
+
+                <li class="mb-3">
+                    <div class="pub-item d-flex align-items-start">
+                        <div class="flex-grow-1">
+                            Liu, Z., <strong>Vasheghani Farahani, M.</strong>, Yang, M., Li, X., Zhao, J., Song, Y.,
+                            &amp; Yang, J. (2020).
+                            Hydrate slurry flow characteristics influenced by formation, agglomeration and deposition in
+                            a fully visual flow loop.
+                            <em>Fuel</em>, 277, 118066.
+                        </div>
+                        <div class="flex-shrink-0 ms-2">
+                            <img src="assets/img/logos/elsevier.png" alt="Elsevier" style="max-height: 105px;" class="pub-logo">
+                        </div>
+                    </div>
+                </li>
+
+                <li class="mb-3">
+                    <div class="pub-item d-flex align-items-start">
+                        <div class="flex-grow-1">
+                            <strong>Vasheghani Farahani, M.</strong>, Hassanpouryouzband, A., Yang, J., &amp;
+                            Tohidi, B. (2020).
+                            Heat transfer in unfrozen and frozen porous media: experimental measurement and pore-scale
+                            modelling.
+                            <em>Water Resources Research</em>, 56(9), e2020WR027885.
+                        </div>
+                        <div class="flex-shrink-0 ms-2">
+                            <img src="assets/img/logos/agu.png" alt="AGU" class="pub-logo">
+                        </div>
+                    </div>
+                </li>
+
+                <li class="mb-3">
+                    <div class="pub-item d-flex align-items-start">
+                        <div class="flex-grow-1">
+                            Hassanpouryouzband, A., <strong>Vasheghani Farahani, M.</strong>, Joonaki, E., Takeya, S.,
+                            Ruppel, C., Yang, J., English, N., Schicks, J., Edlmann, K., Mehrabian, H., Aman, Z.,
+                            &amp; Tohidi, B. (2020).
+                            Gas hydrates in sustainable chemistry.
+                            <em>Chemical Society Reviews</em>, 49(15), 5225–5309.
+                        </div>
+                        <div class="flex-shrink-0 ms-2">
+                            <img src="assets/img/logos/rsc.png" alt="RSC Publishing" style="max-height: 55px;" class="pub-logo">
+                        </div>
+                    </div>
+                </li>
+
+                <li class="mb-3">
+                    <div class="pub-item d-flex align-items-start">
+                        <div class="flex-grow-1">
+                            Movahedi, H., <strong>Vasheghani Farahani, M.</strong>, &amp; Masihi, M. (2020).
+                            Development of a numerical model for single- and two-phase flow simulation in perforated
+                            porous media.
+                            <em>Journal of Energy Resources Technology</em>, 142(4), 042901.
+                        </div>
+                        <div class="flex-shrink-0 ms-2">
+                            <img src="assets/img/logos/asme.png" alt="ASME" class="pub-logo">
+                        </div>
+                    </div>
+                </li>
+
+                <li class="mb-3">
+                    <div class="pub-item d-flex align-items-start">
+                        <div class="flex-grow-1">
+                            <strong>Vasheghani Farahani, M.</strong>, Foroughi, S., Norouzi, S., &amp; Jamshidi, S.
+                            (2019).
+                            Mechanistic study of fines migration in porous media using lattice Boltzmann method coupled
+                            with rigid body physics engine.
+                            <em>Journal of Energy Resources Technology</em>, 141(12), 123002.
+                            <!-- If exact article number differs, adjust here. -->
+                        </div>
+                        <div class="flex-shrink-0 ms-2">
+                            <img src="assets/img/logos/asme.png" alt="ASME" class="pub-logo">
+                        </div>
+                    </div>
+                </li>
+
+                <li class="mb-3">
+                    <div class="pub-item d-flex align-items-start">
+                        <div class="flex-grow-1">
+                            Okwananke, A., Hassanpouryouzband, A., <strong>Vasheghani Farahani, M.</strong>, Yang, J.,
+                            Tohidi, B., Chuvilin, E., Istomin, V., &amp; Bukhanov, B. (2019).
+                            Methane recovery from gas hydrate-bearing sediments: An experimental study on the gas
+                            permeation characteristics under varying pressure.
+                            <em>Journal of Petroleum Science and Engineering</em>, 180, 435–444.
+                        </div>
+                        <div class="flex-shrink-0 ms-2">
+                            <img src="assets/img/logos/elsevier.png" alt="Elsevier" style="max-height: 105px;" class="pub-logo">
+                        </div>
+                    </div>
+                </li>
+
+                <li class="mb-3">
+                    <div class="pub-item d-flex align-items-start">
+                        <div class="flex-grow-1">
+                            Hassanpouryouzband, A., <strong>Vasheghani Farahani, M.</strong>, Yang, J., Tohidi, B.,
+                            Chuvilin, E., Istomin, V., &amp; Bukhanov, B. (2019).
+                            Solubility of flue gas or carbon dioxide–nitrogen gas mixtures in water and aqueous
+                            solutions of salts: experimental measurement and thermodynamic modeling.
+                            <em>Industrial &amp; Engineering Chemistry Research</em>, 58(8), 3377–3394.
+                        </div>
+                        <div class="flex-shrink-0 ms-2">
+                            <img src="assets/img/logos/acs.png" alt="ACS Publications" class="pub-logo">
+                        </div>
+                    </div>
+                </li>
+
+                <li class="mb-3">
+                    <div class="pub-item d-flex align-items-start">
+                        <div class="flex-grow-1">
+                            Movahedi, H., <strong>Vasheghani Farahani, M.</strong>, &amp; Jamshidi, S. (2017).
+                            Application of hydrated basil seeds (HBS) as the herbal fiber on hole cleaning and
+                            filtration
+                            control.
+                            <em>Journal of Petroleum Science and Engineering</em>, 152, 212–228.
+                        </div>
+                        <div class="flex-shrink-0 ms-2">
+                            <img src="assets/img/logos/elsevier.png" alt="Elsevier" style="max-height: 105px;" class="pub-logo">
+                        </div>
+                    </div>
                 </li>
             </ol>
 
-            <h3 class="h5 mt-4">Under review / in preparation</h3>
-            <ul class="small">
-                <li class="mb-2">
-                    <strong>Vasheghani Farahani, M.</strong>, Hasan, S., Van Offenwert, S., Bultreys, T., Sahimi, M.,
-                    &amp; Niasar, V. (2025). Comparative Evaluation of Models for Non-Fickian Transport in Unsaturated
-                    Porous Media.
-                    <em>InterPore Journal</em>, under review.
+            <!-- Conference Proceedings -->
+            <h2 class="h4 mt-5">Conference proceedings</h2>
+            <ol class="pub-list small" reversed start="12">
+                <li class="mb-3">
+                    <div class="pub-item d-flex align-items-start">
+                        <div class="flex-grow-1">
+                            Zhou, T., <strong>Vasheghani Farahani, M.</strong>, Shokri, J., &amp; Niasar, V. (2025,
+                            May).
+                            Dynamics of brine drying and salt precipitation and growth in porous media during
+                            CO<sub>2</sub> injection.
+                            In <em>Proceedings of the 17th Annual Meeting of the International Society of Porous
+                                Media</em>.
+                        </div>
+                        <div class="flex-shrink-0 ms-2">
+                            <img src="assets/img/logos/interpore.jpg" alt="InterPore" style="max-height: 50px;" class="pub-logo">
+                        </div>
+                    </div>
                 </li>
-                <li class="mb-2">
-                    Zalakinezhad, A., <strong>Vasheghani Farahani, M.</strong>, &amp; Jamshidi, S. (2025). Development
-                    of analytical models for critical wellbore pressure in vertical, horizontal, and deviated wells
-                    using Mohr–Coulomb and Mogi–Coulomb failure criteria.
-                    <em>Engineering Geology</em>, under review.
+
+                <li class="mb-3">
+                    <div class="pub-item d-flex align-items-start">
+                        <div class="flex-grow-1">
+                            Zhou, T., <strong>Vasheghani Farahani, M.</strong>, An, S., &amp; Niasar, V. (2024, May).
+                            Combined effect of pore geometry and wettability characteristics on entry capillary
+                            pressure.
+                            In <em>Proceedings of the 16th Annual Meeting of the International Society of Porous
+                                Media</em>.
+                        </div>
+                        <div class="flex-shrink-0 ms-2">
+                            <img src="assets/img/logos/interpore.jpg" alt="InterPore" style="max-height: 50px;" class="pub-logo">
+                        </div>
+                    </div>
                 </li>
-                <li class="mb-2">
-                    <strong>Vasheghani Farahani, M.</strong>, Avis, S., Rennick, M., Kusumaatmaja, H., &amp; Niasar, V.
-                    (in preparation). Lattice Boltzmann simulation of brine evaporation and salt precipitation in porous
-                    media. Target: <em>Journal of Fluid Mechanics</em>.
+
+                <li class="mb-3">
+                    <div class="pub-item d-flex align-items-start">
+                        <div class="flex-grow-1">
+                            Shidvash, S., <strong>Vasheghani Farahani, M.</strong>, Nezhad, M. M., &amp; Sadeghnejad,
+                            S. (2023, May).
+                            Predicting velocity field of porous rocks using convolutional neural networks.
+                            In <em>Proceedings of the 15th Annual Meeting of the International Society of Porous
+                                Media</em>.
+                        </div>
+                        <div class="flex-shrink-0 ms-2">
+                            <img src="assets/img/logos/interpore.jpg" alt="InterPore" style="max-height: 50px;" class="pub-logo">
+                        </div>
+                    </div>
                 </li>
+
+                <li class="mb-3">
+                    <div class="pub-item d-flex align-items-start">
+                        <div class="flex-grow-1">
+                            <strong>Vasheghani Farahani, M.</strong>, &amp; Mousavi Nezhad, M. (2022, June).
+                            Application of lattice Boltzmann method in pore-scale characterisation of flow dynamics in
+                            three-dimensional porous media.
+                            In <em>Proceedings of the 14th Annual Meeting of the International Society of Porous
+                                Media</em>.
+                        </div>
+                        <div class="flex-shrink-0 ms-2">
+                            <img src="assets/img/logos/interpore.jpg" alt="InterPore" style="max-height: 50px;" class="pub-logo">
+                        </div>
+                    </div>
+                </li>
+
+                <li class="mb-3">
+                    <div class="pub-item d-flex align-items-start">
+                        <div class="flex-grow-1">
+                            <strong>Vasheghani Farahani, M.</strong>, Salehian, M., &amp; Jamshidi, S. (2021, October).
+                            A dynamic model for non-Newtonian drilling fluid’s filtration in casing drilling technology.
+                            In <em>82nd EAGE Annual Conference &amp; Exhibition</em> (Vol. 2021, No. 1, pp. 1–5).
+                            European
+                            Association of Geoscientists &amp; Engineers.
+                        </div>
+                        <div class="flex-shrink-0 ms-2">
+                            <img src="assets/img/logos/eage.png" alt="EAGE" class="pub-logo">
+                        </div>
+                    </div>
+                </li>
+
+                <li class="mb-3">
+                    <div class="pub-item d-flex align-items-start">
+                        <div class="flex-grow-1">
+                            <strong>Vasheghani Farahani, M.</strong>, Hassanpouryouzband, A., &amp; Edlmann, K. (2021,
+                            June).
+                            Pore-scale investigation of the capillary pressure effect on the upward migration of
+                            hydrogen
+                            through water-filled porous media.
+                            In <em>Proceedings of the 13th Annual Meeting of the International Society of Porous
+                                Media</em>.
+                        </div>
+                        <div class="flex-shrink-0 ms-2">
+                            <img src="assets/img/logos/interpore.jpg" alt="InterPore" style="max-height: 50px;" class="pub-logo">
+                        </div>
+                    </div>
+                </li>
+
+                <li class="mb-3">
+                    <div class="pub-item d-flex align-items-start">
+                        <div class="flex-grow-1">
+                            Norouzi, S., Soleimani, R., <strong>Vasheghani Farahani, M.</strong>, &amp; Rasaei, M. R.
+                            (2019, June).
+                            Pore-scale simulation of capillary force effect in water–oil immiscible displacement process
+                            in porous media.
+                            In <em>81st EAGE Conference and Exhibition 2019</em> (Vol. 2019, No. 1, pp. 1–5). European
+                            Association of Geoscientists &amp; Engineers.
+                        </div>
+                        <div class="flex-shrink-0 ms-2">
+                            <img src="assets/img/logos/eage.png" alt="EAGE" class="pub-logo">
+                        </div>
+                    </div>
+                </li>
+
+                <li class="mb-3">
+                    <div class="pub-item d-flex align-items-start">
+                        <div class="flex-grow-1">
+                            Norouzi, S., Nazari, M., &amp; <strong>Vasheghani Farahani, M.</strong> (2019, June).
+                            A novel hybrid particle swarm optimization–simulated annealing approach for
+                            CO<sub>2</sub>–oil
+                            minimum miscibility pressure (MMP) prediction.
+                            In <em>81st EAGE Conference and Exhibition 2019</em> (Vol. 2019, No. 1, pp. 1–5). European
+                            Association of Geoscientists &amp; Engineers.
+                        </div>
+                        <div class="flex-shrink-0 ms-2">
+                            <img src="assets/img/logos/eage.png" alt="EAGE" class="pub-logo">
+                        </div>
+                    </div>
+                </li>
+
+                <li class="mb-3">
+                    <div class="pub-item d-flex align-items-start">
+                        <div class="flex-grow-1">
+                            <strong>Vasheghani Farahani, M.</strong>, Rostami, A., Kamari, A., Joonaki, E., &amp;
+                            Ghanaatian, S. (2018, June).
+                            Accurate estimation of minimum miscibility pressure during nitrogen injection into
+                            hydrocarbon
+                            reservoirs.
+                            In <em>80th EAGE Conference and Exhibition 2018</em> (Vol. 2018, No. 1, pp. 1–5). European
+                            Association of Geoscientists &amp; Engineers.
+                        </div>
+                        <div class="flex-shrink-0 ms-2">
+                            <img src="assets/img/logos/eage.png" alt="EAGE" class="pub-logo">
+                        </div>
+                    </div>
+                </li>
+
+                <li class="mb-3">
+                    <div class="pub-item d-flex align-items-start">
+                        <div class="flex-grow-1">
+                            <strong>Vasheghani Farahani, M.</strong>, Shams, R., &amp; Jamshidi, S. (2018, June).
+                            A robust modelling approach for predicting the rheological behavior of thixotropic fluids.
+                            In <em>80th EAGE Conference and Exhibition 2018</em> (Vol. 2018, No. 1, pp. 1–5). European
+                            Association of Geoscientists &amp; Engineers.
+                        </div>
+                        <div class="flex-shrink-0 ms-2">
+                            <img src="assets/img/logos/eage.png" alt="EAGE" class="pub-logo">
+                        </div>
+                    </div>
+                </li>
+
+                <li class="mb-3">
+                    <div class="pub-item d-flex align-items-start">
+                        <div class="flex-grow-1">
+                            <strong>Vasheghani Farahani, M.</strong>, Jahanpeyma, Y., &amp; Taghikhani, V. (2018, June).
+                            Dynamic modeling and numerical simulation of gas lift performance in deviated oil wells
+                            using
+                            the two-fluid model.
+                            In <em>80th EAGE Conference and Exhibition 2018</em> (Vol. 2018, No. 1, pp. 1–5). European
+                            Association of Geoscientists &amp; Engineers.
+                        </div>
+                        <div class="flex-shrink-0 ms-2">
+                            <img src="assets/img/logos/eage.png" alt="EAGE" class="pub-logo">
+                        </div>
+                    </div>
+                </li>
+
+                <li class="mb-3">
+                    <div class="pub-item d-flex align-items-start">
+                        <div class="flex-grow-1">
+                            <strong>Vasheghani Farahani, M.</strong>, Soleimani, R., Jamshidi, S., &amp; Salehi, S.
+                            (2014, February).
+                            Development of a dynamic model for drilling fluid’s filtration: implications to prevent
+                            formation damage.
+                            In <em>SPE International Symposium and Exhibition on Formation Damage Control</em>. Society
+                            of Petroleum Engineers.
+                        </div>
+                        <div class="flex-shrink-0 ms-2">
+                            <img src="assets/img/logos/spe.png" alt="SPE" style="max-height: 140px;" class="pub-logo">
+                        </div>
+                    </div>
+                </li>
+            </ol>
+
+            <!-- Dissertations -->
+            <h2 class="h4 mt-5">Dissertations</h2>
+            <ul class="pub-list small">
+
+                <!-- PhD -->
+                <li class="mb-3">
+                    <div class="pub-item d-flex align-items-start">
+                        <div class="flex-grow-1">
+                            <strong>PhD dissertation:</strong><br>
+                            “Insights into climate-driven evolution of gas hydrate-bearing permafrost sediments”,
+                            2021, Heriot-Watt University, UK.<br>
+                            Supervisors: Professor Bahman Tohidi and Dr Jinhai Yang.
+                        </div>
+                        <div class="flex-shrink-0 ms-2">
+                            <img src="assets/img/logos/hwu.png" alt="Heriot-Watt University" class="pub-logo">
+                        </div>
+                    </div>
+                </li>
+
+                <!-- MSc -->
+                <li class="mb-3">
+                    <div class="pub-item d-flex align-items-start">
+                        <div class="flex-grow-1">
+                            <strong>MSc thesis:</strong><br>
+                            “Mechanistic study of fines migration in porous media using lattice Boltzmann method coupled
+                            with a rigid body physics engine”,
+                            2015, Sharif University of Technology, Iran.<br>
+                            Supervisor: Dr Saeid Jamshidi.
+                        </div>
+                        <div class="flex-shrink-0 ms-2">
+                            <img src="assets/img/logos/sharif.jpg" alt="Sharif University of Technology"
+                                class="pub-logo">
+                        </div>
+                    </div>
+                </li>
+
+                <!-- BSc -->
+                <li class="mb-3">
+                    <div class="pub-item d-flex align-items-start">
+                        <div class="flex-grow-1">
+                            <strong>BSc thesis:</strong><br>
+                            “Development of a dynamic model for drilling fluid’s filtration”,
+                            2013, Sharif University of Technology, Iran.<br>
+                            Supervisor: Dr Saeid Jamshidi.
+                        </div>
+                        <div class="flex-shrink-0 ms-2">
+                            <img src="assets/img/logos/sharif.jpg" alt="Sharif University of Technology"
+                                class="pub-logo">
+                        </div>
+                    </div>
+                </li>
+
             </ul>
 
-            <h3 class="h5 mt-4">Selected conference contributions</h3>
-            <ul class="small">
-                <li class="mb-2">
-                    Zhou, T., <strong>Vasheghani Farahani, M.</strong>, Shokri, J., &amp; Niasar, V. (2025). Dynamics of
-                    brine drying and salt precipitation and growth in porous media during CO₂ injection.
-                    <em>InterPore 2025</em>.
-                </li>
-                <li class="mb-2">
-                    <strong>Vasheghani Farahani, M.</strong>, &amp; Mousavi Nezhad, M. (2022). Application of lattice
-                    Boltzmann method in pore-scale characterisation of flow dynamics in three-dimensional porous media.
-                    <em>InterPore 2022</em>.
-                </li>
-            </ul>
+
         </div>
     </main>
-
     <footer id="footer" class="py-3 border-top">
         <div class="container small text-center text-muted">
             &copy; <span id="year"></span> Mehrdad Vasheghani Farahani.
@@ -150,6 +560,7 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/main.js"></script>
+
 </body>
 
 </html>
