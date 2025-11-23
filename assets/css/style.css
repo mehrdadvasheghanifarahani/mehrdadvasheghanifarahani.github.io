@@ -130,7 +130,7 @@ a:hover {
 
 /* Profile photo */
 .profile-photo-wrapper {
-    max-width: 220px;
+    max-width: 280px;
     margin: 0 auto;
     border: 4px solid var(--uom-gold-light);
     border-radius: 50%;
