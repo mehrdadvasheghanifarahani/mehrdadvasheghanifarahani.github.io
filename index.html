@@ -9,7 +9,7 @@
     <meta name="description"
         content="Personal website of Dr Mehrdad Vasheghani Farahani – research in transport phenomena, multiphase flow, reactive transport and porous media for net zero technologies.">
     <meta name="keywords"
-        content="Mehrdad Vasheghani Farahani, porous media, transport phenomena, multiphase flow, CCUS, hydrogen storage, gas hydrates, lattice Boltzmann, microfluidics">
+        content="Mehrdad Vasheghani Farahani, porous media, transport phenomena, multiphase flow, CCUS, hydrogen storage, gas hydrates, lattice Boltzmann modelling, microfluidics">
 
     <!-- Favicon (replace with your own if you like) -->
     <link rel="icon" href="assets/img/favicon.png">
@@ -65,10 +65,10 @@
                         </li>
                         <!-- separate pages -->
                         <li class="nav-item">
-                            <a class="nav-link" href="publications.html">Publications</a>
+                            <a class="nav-link" href="projects.html">Projects</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="projects.html">Projects</a>
+                            <a class="nav-link" href="publications.html">Publications</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="news.html">News</a>
@@ -133,7 +133,7 @@
                 <div class="col-lg-6">
                     <h2 class="section-title mb-3">About me</h2>
                     <p>
-                        I am a chemical engineer by training, with a PhD in GeoEnergy Engineering from Heriot-Watt
+                        I am a porous media researcher, with a PhD in GeoEnergy Engineering from Heriot-Watt
                         University (UK) and BSc/MSc degrees in Petroleum Engineering from Sharif University of
                         Technology (Iran).
                         My research focuses on understanding and modelling coupled thermo–hydro–chemical processes in
@@ -142,7 +142,8 @@
                     <p>
                         Methodologically, I combine <strong>advanced experiments</strong> (microfluidics, X-ray
                         micro-CT, MRI, μPIV and fluorescence imaging) with <strong>numerical modelling</strong>
-                        (lattice Boltzmann, pore-network modelling, CFD) and <strong>data-driven approaches</strong>
+                        (lattice Boltzmann modelling, pore-network modelling, CFD) and <strong>data-driven
+                            approaches</strong>
                         to address challenges in carbon capture, utilisation and storage (CCUS), hydrogen storage,
                         gas hydrates, and subsurface energy engineering.
                     </p>
@@ -197,7 +198,7 @@
                                 <div class="col-6">
                                     <ul class="list-unstyled mb-0">
                                         <li>• CCUS & net zero technologies</li>
-                                        <li>• Lattice Boltzmann / PNM</li>
+                                        <li>• Lattice Boltzmann modelling / PNM</li>
                                         <li>• Data-driven modelling & ML</li>
                                     </ul>
                                 </div>
@@ -363,49 +364,82 @@
             <div class="row gy-4">
                 <div class="col-lg-6">
                     <p>
-                        If you are interested in collaboration on porous media, CCUS, gas hydrates, subsurface energy or
-                        related topics, feel free to get in touch.
+                        If you are interested in collaboration on porous media, CCUS, gas hydrates, subsurface energy
+                        or related topics, feel free to get in touch.
                     </p>
-                    <ul class="list-unstyled">
-                        <li class="mb-2">
-                            <i class="bi bi-envelope me-2 text-primary"></i>
-                            <a href="mailto:mehrdad.vasheghanifarahani@manchester.ac.uk">
-                                mehrdad.vasheghanifarahani@manchester.ac.uk
-                            </a>
-                        </li>
-                        <li class="mb-2">
-                            <i class="bi bi-geo-alt me-2 text-primary"></i>
-                            Department of Chemical Engineering, The University of Manchester, UK
-                        </li>
-                        <li class="mb-2">
-                            <i class="bi bi-linkedin me-2 text-primary"></i>
-                            <a href="https://www.linkedin.com/in/mehrdad-vasheghani-farahani-71180b95/" target="_blank">
-                                LinkedIn profile
-                            </a>
-                        </li>
-                    </ul>
+                    <!-- Social Icons Row -->
+                    <div class="d-flex align-items-center mt-3">
+
+                        <!-- UoM Profile -->
+                        <a href="https://research.manchester.ac.uk/en/persons/mehrdad-vasheghani-farahani/"
+                            target="_blank" class="me-3 text-primary fs-4" data-bs-toggle="tooltip"
+                            data-bs-placement="top" title="UoM Profile">
+                            <i class="bi bi-building"></i>
+                        </a>
+
+                        <!-- Email -->
+                        <a href="mailto:mehrdad.vasheghanifarahani@manchester.ac.uk" class="me-3 text-primary fs-4"
+                            data-bs-toggle="tooltip" data-bs-placement="top" title="Email">
+                            <i class="bi bi-envelope-fill"></i>
+                        </a>
+
+                        <!-- LinkedIn -->
+                        <a href="https://www.linkedin.com/in/mehrdad-vasheghani-farahani-71180b95/" target="_blank"
+                            class="me-3 text-primary fs-4" data-bs-toggle="tooltip" data-bs-placement="top"
+                            title="LinkedIn">
+                            <i class="bi bi-linkedin"></i>
+                        </a>
+
+                        <!-- Google Scholar -->
+                        <a href="https://scholar.google.com/citations?user=YOUR_GS_ID" target="_blank"
+                            class="me-3 text-primary fs-4" data-bs-toggle="tooltip" data-bs-placement="top"
+                            title="Google Scholar">
+                            <i class="bi bi-mortarboard-fill"></i>
+                        </a>
+
+                        <!-- GitHub -->
+                        <a href="https://github.com/mehrdadvasheghanifarahani" target="_blank"
+                            class="me-3 text-primary fs-4" data-bs-toggle="tooltip" data-bs-placement="top"
+                            title="GitHub">
+                            <i class="bi bi-github"></i>
+                        </a>
+
+                        <!-- ORCID -->
+                        <a href="https://orcid.org/0000-0001-9727-7839" target="_blank" class="me-3 text-success fs-4"
+                            data-bs-toggle="tooltip" data-bs-placement="top" title="ORCID">
+                            <i class="bi bi-person-badge-fill"></i>
+                        </a>
+
+                        <!-- ResearchGate (optional) -->
+                        <a href="https://www.researchgate.net/profile/Mehrdad-Vasheghani-Farahani?ev=hdr_xprf"
+                            target="_blank" class="text-primary fs-4" data-bs-toggle="tooltip" data-bs-placement="top"
+                            title="ResearchGate">
+                            <i class="bi bi-journal-text"></i>
+                        </a>
+
+                    </div>
+
                 </div>
+
                 <div class="col-lg-6">
-                    <!-- Simple contact note instead of form (you can add a form later if you want) -->
                     <div class="alert alert-secondary small mb-0">
                         This site is intended as a personal research profile.
                         For student or administrative enquiries at The University of Manchester,
-                        please use your official university channels and email.
+                        please use official university communication channels.
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
+
     <!-- ======= Footer ======= -->
     <footer id="footer" class="py-3 border-top">
         <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center small">
-            <div class="text-muted mb-2 mb-md-0">
-                &copy; <span id="year"></span> Mehrdad Vasheghani Farahani. All rights reserved.
-            </div>
-            <div class="text-muted">
-                Maintained by Mehrdad · <span class="text-secondary">downloads/ (CV & materials – not publicly listed
-                    yet)</span>
+            <div class="w-100 text-center">
+                <div class="text-muted mb-2 mb-md-0">
+                    &copy; <span id="year"></span> Mehrdad Vasheghani Farahani. All rights reserved.
+                </div>
             </div>
         </div>
     </footer>

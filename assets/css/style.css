@@ -1,0 +1,196 @@
+/* ================================
+   Global Theme – UoM Branding
+   ================================ */
+
+/* Colour palette */
+:root {
+    --uom-purple: #660099;
+    --uom-purple-light: #8e44ad;
+    --uom-gold: #ffcc00;
+    --uom-gold-light: #ffdd33;
+
+    --text-dark: #2d2d2d;
+    --text-light: #ffffff;
+
+    --bg-light: #f7f5fb;
+    /* subtle lavender tint */
+    --bg-lighter: #faf7ff;
+}
+
+/* Typography */
+body {
+    font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont,
+        "Segoe UI", sans-serif;
+    color: var(--text-dark);
+    background-color: white;
+}
+
+a {
+    color: var(--uom-purple);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--uom-purple-light);
+}
+
+/* Override Bootstrap .text-primary to UoM purple */
+.text-primary {
+    color: var(--uom-purple) !important;
+}
+
+
+/* Section Titles */
+.section-title {
+    font-weight: 700;
+    color: var(--uom-purple);
+    border-left: 6px solid var(--uom-gold);
+    padding-left: 12px;
+}
+
+/* ================================
+   Navbar
+   ================================ */
+
+.navbar {
+    background-color: var(--text-light);
+    border-bottom: 3px solid var(--uom-purple);
+}
+
+.navbar-brand span {
+    color: var(--uom-purple);
+}
+
+.nav-link {
+    color: var(--text-dark) !important;
+    font-weight: 500;
+}
+
+.nav-link:hover {
+    color: var(--uom-purple) !important;
+}
+
+.nav-link.active {
+    font-weight: 600;
+    color: var(--uom-purple) !important;
+}
+
+.navbar .btn-outline-primary {
+    background-color: var(--uom-purple);
+    color: var(--uom-gold) !important;
+    border-color: var(--uom-purple) !important;
+    font-weight: 600;
+}
+
+.navbar .btn-outline-primary:hover {
+    background-color: var(--uom-purple-light);
+    border-color: var(--uom-purple-light) !important;
+    color: var(--text-light) !important;
+}
+
+
+/* ================================
+   Hero Section
+   ================================ */
+
+#hero {
+    background: linear-gradient(180deg,
+            var(--uom-purple) 0%,
+            var(--uom-purple-light) 10%,
+            var(--bg-light) 90%);
+    color: white;
+}
+
+#hero p,
+#hero h1 {
+    color: black;
+}
+
+.btn-primary {
+    background-color: var(--uom-gold);
+    border-color: var(--uom-gold);
+    color: black;
+}
+
+.btn-primary:hover {
+    background-color: var(--uom-gold-light);
+    border-color: var(--uom-gold-light);
+    color: black;
+}
+
+.btn-outline-secondary {
+    border-color: var(--uom-gold);
+    color: var(--uom-gold);
+}
+
+.btn-outline-secondary:hover {
+    background-color: var(--uom-gold);
+    color: black;
+}
+
+/* Profile photo */
+.profile-photo-wrapper {
+    max-width: 220px;
+    margin: 0 auto;
+    border: 4px solid var(--uom-gold-light);
+    border-radius: 50%;
+    padding: 6px;
+}
+
+/* ================================
+   Cards
+   ================================ */
+
+.card {
+    border-top: 4px solid var(--uom-purple);
+}
+
+.card-title {
+    font-weight: 600;
+    color: var(--uom-purple);
+}
+
+/* ================================
+   Alternating Section Backgrounds
+   ================================ */
+
+#research,
+#hero {
+    background-color: var(--bg-lighter);
+}
+
+#service {
+    background-color: var(--bg-light);
+}
+
+/* ================================
+   Gallery
+   ================================ */
+
+.gallery-item img:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 0.5rem 1.2rem rgba(102, 0, 153, 0.25);
+    /* purple glow */
+}
+
+/* ================================
+   Footer
+   ================================ */
+
+#footer {
+    background-color: var(--uom-purple);
+    color: white;
+}
+
+#footer a {
+    color: var(--uom-gold);
+}
+
+#footer a:hover {
+    color: var(--uom-gold-light);
+}
+
+#footer,
+#footer * {
+    color: white !important;
+}

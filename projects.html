@@ -12,13 +12,12 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
     <link href="assets/css/style.css" rel="stylesheet">
 
-    <!-- Google tag (gtag.js) -->
+    <!-- Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-J6N287LE0B"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
         function gtag() { dataLayer.push(arguments); }
         gtag('js', new Date());
-
         gtag('config', 'G-J6N287LE0B');
     </script>
 </head>
@@ -31,16 +30,19 @@
                 <a class="navbar-brand fw-bold" href="index.html">
                     <span class="text-primary">Mehrdad</span> Vasheghani Farahani
                 </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ms-auto align-items-lg-center">
                         <li class="nav-item"><a class="nav-link" href="index.html#hero">Home</a></li>
-                        <li class="nav-item"><a class="nav-link" href="publications.html">Publications</a></li>
-                        <li class="nav-item"><a class="nav-link active" href="projects.html">Projects</a></li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="projects.html">Projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="publications.html">Publications</a>
+                        </li>
                         <li class="nav-item"><a class="nav-link" href="news.html">News</a></li>
                         <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
                         <li class="nav-item ms-lg-3">
@@ -52,166 +54,313 @@
         </nav>
     </header>
 
-    <!-- ======= Main ======= -->
+
     <main class="py-5">
         <div class="container">
             <h1 class="mb-4">Projects</h1>
-            <p class="text-muted">
-                A selection of ongoing and recent projects I have been involved in, spanning pore-scale modelling,
-                microfluidics, X-ray imaging and net-zero technologies.
+            <p class="text-muted mb-5">
+                Selected research projects in porous media flow, microfluidics, lattice Boltzmann modelling,
+                gas hydrate science and technologies, subsurface energy storage, and advanced X-ray imaging.
+                Roles include Principal Investigator (PI), Co-Investigator (Co-I), and Researcher.
             </p>
 
-            <div class="row gy-4 mt-3">
+            <!-- ============================================================= -->
+            <!-- SECTION: UNIVERSITY OF MANCHESTER -->
+            <!-- ============================================================= -->
+            <h3 class="mt-5 mb-4">University of Manchester</h3>
+            <div class="row gy-4">
 
-                <!-- ========================================================= -->
-                <!-- 1. PINCH Project -->
-                <!-- ========================================================= -->
-
+                <!-- PINCH -->
                 <div class="col-lg-6">
                     <div class="card h-100 border-0 shadow-sm">
-                        <div class="card-body d-flex justify-content-between align-items-start">
-
-                            <!-- Text -->
+                        <div class="card-body d-flex justify-content-between">
                             <div class="flex-grow-1 pe-3">
-                                <h5 class="card-title">PINCH – Performance and Injectivity of CO₂ in Hyper-saline
-                                    Aquifers</h5>
-                                <p class="small text-muted mb-2">
-                                    EPSRC-funded · The University of Manchester
-                                </p>
+                                <h5 class="card-title">PINCH – CO₂ Injectivity in Hyper-saline Aquifers</h5>
+                                <p class="small text-muted">EPSRC £755k · Role: Researcher</p>
                                 <p class="small">
-                                    As Research Fellow (and previously PDRA), I work on pore-scale modelling of salt
-                                    precipitation, permeability impairment and multiphase flow in hyper-saline
-                                    aquifers using lattice Boltzmann simulations coupled with reactive transport.
+                                    Leading multi-physics pore-scale modelling and microfluidic experimental studies to
+                                    understand
+                                    CO₂–brine displacement, evaporation, humidity transport, and halite precipitation.
                                 </p>
                                 <ul class="small">
-                                    <li>Multiphysics LBM development for salt precipitation.</li>
-                                    <li>Analysis of injectivity loss under realistic reservoir conditions.</li>
-                                    <li>Collaboration with Durham, Stuttgart, BP, Equinor and Shell.</li>
+                                    <li>Developing a multi-component, multi-phase LBM in collaboration with University
+                                        of Edinburgh.</li>
+                                    <li>Commissioned and upgraded a full HPHT microfluidic setup.</li>
+                                    <li>Industrial liaison & project coordination with BP, Shell, Equinor, Durham
+                                        University, and Stuttgart University.</li>
                                 </ul>
+                                Click <a href="https://pinch-project.co.uk" target="_blank">here</a> for more
+                                information.
                             </div>
-
-                            <!-- Logo -->
-                            <div class="flex-shrink-0">
-                                <img src="assets/img/logos/uom.jpg" class="project-logo" style="max-height: 55px;"
-                                    alt="University of Manchester">
-                            </div>
-
+                            <img src="assets/img/logos/pinch.png" style="max-height:50px">
                         </div>
                     </div>
                 </div>
 
-                <!-- ========================================================= -->
-                <!-- 2. 4D micro-CT at Diamond Light Source -->
-                <!-- ========================================================= -->
-
+                <!-- Diamond 4D CT -->
                 <div class="col-lg-6">
                     <div class="card h-100 border-0 shadow-sm">
-                        <div class="card-body d-flex justify-content-between align-items-start">
-
-                            <!-- Text -->
+                        <div class="card-body d-flex justify-content-between">
                             <div class="flex-grow-1 pe-3">
-                                <h5 class="card-title">4D micro-CT of salt precipitation (Diamond Light Source)</h5>
-                                <p class="small text-muted mb-2">I12–JEEP Beamline · Co-Investigator</p>
+                                <h5 class="card-title">4D micro-CT Imaging of Salt Precipitation</h5>
+                                <p class="small text-muted">Diamond Light Source · Role: Co-Investigator</p>
                                 <p class="small">
-                                    Co-Investigator on a Diamond Light Source project developing 4D micro-CT imaging
-                                    experiments to quantify pore-level salt precipitation and permeability evolution
-                                    during CO₂ injection into reservoir rocks.
+                                    Synchrotron beamtime awarded for time-resolved pore-scale imaging of brine
+                                    evaporation
+                                    and salt growth in reservoir rocks during supercritical CO₂ injection.
                                 </p>
                                 <ul class="small">
-                                    <li>Time-resolved imaging of brine drying & salt growth.</li>
-                                    <li>Pore-scale structure extraction & permeability analysis.</li>
-                                    <li>Integration with LBM and pore-network simulations.</li>
+                                    <li>Led proposal drafting, revision, and HSE/SOP documentation.</li>
+                                    <li>On-site beamline execution and coordination with DLS scientists.</li>
+                                    <li>Pore-scale segmentation and permeability quantification.</li>
                                 </ul>
                             </div>
-
-                            <!-- Logo -->
-                            <div class="flex-shrink-0">
-                                <img src="assets/img/logos/dls.webp" class="project-logo" style="max-height: 55px;"
-                                    alt="Diamond Light Source">
-                            </div>
-
+                            <img src="assets/img/logos/dls.webp" style="max-height:50px">
                         </div>
                     </div>
                 </div>
 
-                <!-- ========================================================= -->
-                <!-- 3. Contaminant Transport & MINRESCUE -->
-                <!-- ========================================================= -->
-
+                <!-- UKCCSRC -->
                 <div class="col-lg-6">
                     <div class="card h-100 border-0 shadow-sm">
-                        <div class="card-body d-flex justify-content-between align-items-start">
-
-                            <!-- Text -->
+                        <div class="card-body d-flex justify-content-between">
                             <div class="flex-grow-1 pe-3">
-                                <h5 class="card-title">Contaminant transport and mixing in porous geomaterials</h5>
-                                <p class="small text-muted mb-2">
-                                    EPSRC Impact Acceleration & RFCS MINRESCUE · University of Warwick
-                                </p>
+                                <h5 class="card-title">Capillary Suction during Brine Evaporation</h5>
+                                <p class="small text-muted">UKCCSRC Flexible Funding 2024 · Role: Co-Investigator</p>
                                 <p class="small">
-                                    At Warwick, I developed LBM simulations and PDMS microfluidic experiments to
-                                    characterise contaminant transport, dispersion and mixing, and contributed to the
-                                    EU MINRESCUE project on recycled mining waste geomaterials.
+                                    Combined microfluidic experiments and system upgrades to quantify capillary suction
+                                    induced by evaporation-driven salt precipitation in CO₂ storage systems.
                                 </p>
                                 <ul class="small">
-                                    <li>3D LBM simulations of turbulent & transitional flow.</li>
-                                    <li>Fluorescent microfluidic imaging of mixing in micromodels.</li>
-                                    <li>X-ray CT, ML segmentation and pore-network modelling.</li>
+                                    <li>Developed proposal and experimental methodology.</li>
+                                    <li>Led μPIV/LIF and HPHT microfluidic measurements.</li>
+                                    <li>Contributed major components of report and analysis.</li>
                                 </ul>
+                                Click <a
+                                    href="https://ukccsrc.ac.uk/research/flexible-funding/flexible-funding-2024/professor-vahid-niasar/"
+                                    target="_blank">here</a> for more information.
                             </div>
-
-                            <!-- Logo -->
-                            <div class="flex-shrink-0">
-                                <img src="assets/img/logos/uow.jpg" class="project-logo" style="max-height: 65px;"
-                                    alt="University of Warwick">
-                            </div>
-
+                            <img src="assets/img/logos/ukccsrc.png" style="max-height:50px">
                         </div>
                     </div>
                 </div>
 
-                <!-- ========================================================= -->
-                <!-- 4. Gas Hydrates -->
-                <!-- ========================================================= -->
+            </div>
 
+
+            <!-- ============================================================= -->
+            <!-- SECTION: UNIVERSITY OF WARWICK -->
+            <!-- ============================================================= -->
+            <h3 class="mt-5 mb-4">University of Warwick</h3>
+            <div class="row gy-4">
+
+                <!-- Contaminant Transport -->
                 <div class="col-lg-6">
                     <div class="card h-100 border-0 shadow-sm">
-                        <div class="card-body d-flex justify-content-between align-items-start">
-
-                            <!-- Text -->
+                        <div class="card-body d-flex justify-content-between">
                             <div class="flex-grow-1 pe-3">
-                                <h5 class="card-title">Gas hydrates: climate, CCUS and separation processes</h5>
-                                <p class="small text-muted mb-2">
-                                    Centre for Gas Hydrate Research · Heriot-Watt University
-                                </p>
+                                <h5 class="card-title">Turbulent Transport & Mixing in Porous Media</h5>
+                                <p class="small text-muted">EPSRC Impact Acceleration · Role: Researcher</p>
                                 <p class="small">
-                                    During my PhD and subsequent collaborations I worked on hydrate-bearing sediments,
-                                    hydrate-based separations, and hydrate slurry flow, using lab experiments and
-                                    pore-scale modelling tools.
+                                    Developed lattice Boltzmann models and conducted microfluidic experiments for
+                                    quantifying solute transport,
+                                    mixing, and dispersion in saturated porous materials.
                                 </p>
                                 <ul class="small">
-                                    <li>Hydrate quantification using coupled geophysical–geothermal schemes.</li>
-                                    <li>MRI & X-ray imaging of hydrate formation/dissociation.</li>
-                                    <li>Hydrate thermodynamics & flow assurance modelling (HydraFLASH).</li>
+                                    <li>Lattice Boltzmann simulations across laminar to turbulent regimes.</li>
+                                    <li>Design and fabrication of PDMS micromodels.</li>
+                                    <li>Fluorescent microfluidic visualisation in 2.5D chips.</li>
                                 </ul>
                             </div>
-
-                            <!-- Logo -->
-                            <div class="flex-shrink-0">
-                                <img src="assets/img/logos/hwu.png" class="project-logo" style="max-height: 55px;"
-                                    alt="Heriot-Watt University">
-                            </div>
-
+                            <img src="assets/img/logos/epsrc.png" style="max-height:50px">
                         </div>
                     </div>
                 </div>
 
-            </div> <!-- row -->
-        </div> <!-- container -->
+                <!-- MINRESCUE -->
+                <div class="col-lg-6">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body d-flex justify-content-between">
+                            <div class="flex-grow-1 pe-3">
+                                <h5 class="card-title">MINRESCUE – Recycled Mining Waste Materials</h5>
+                                <p class="small text-muted">RFCS €3.2M · Role: Researcher (WP2 Contributor)</p>
+                                <p class="small">
+                                    Characterised recycled coal-mining waste under wetting–drying cycles through
+                                    combined geochemical, imaging, and pore-network analyses.
+                                </p>
+                                <ul class="small">
+                                    <li>Leaching tests (pH, electrical resistivity).</li>
+                                    <li>X-ray micro-CT imaging + ML segmentation.</li>
+                                    <li>Pore-network extraction & hydraulic conductivity analysis.</li>
+                                </ul>
+                                Click <a href="https://minrescue.gig.eu/" target="_blank">here</a> for more
+                                information.
+                            </div>
+                            <img src="assets/img/logos/minrescue.jpg" style="max-height:90px">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <!-- ============================================================= -->
+            <!-- SECTION: HERIOT-WATT UNIVERSITY -->
+            <!-- ============================================================= -->
+            <h3 class="mt-5 mb-4">Heriot-Watt University</h3>
+            <div class="row gy-4">
+
+                <!-- Gas Hydrates -->
+                <div class="col-lg-6">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body d-flex justify-content-between">
+                            <div class="flex-grow-1 pe-3">
+                                <h5 class="card-title">Gas Hydrates in Porous Media</h5>
+                                <p class="small text-muted">PhD Research (James Watt Scholarship) · Role: PG Researcher
+                                </p>
+                                <p class="small">
+                                    Developed a novel method to distinguish hydrates from ice using LBM, ultrasound
+                                    velocity, and thermal conductivity measurements.
+                                </p>
+                                <ul class="small">
+                                    <li>Three major publications + Honourable Mention (DRA 2021).</li>
+                                    <li>Applications in CCUS, desalination, gas separation.</li>
+                                    <li>Contributed to two externally sponsored hydrate projects (Skoltech, Qatar
+                                        Petroleum).</li>
+                                </ul>
+                                Click <a href="https://www.ros.hw.ac.uk/items/3f720765-ee59-4e2a-9e6c-07da120b4f92"
+                                    target="_blank">here</a> for more information.
+                            </div>
+                            <img src="assets/img/logos/hwu.png" style="max-height:50px">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- numSCAL -->
+                <div class="col-lg-6">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body d-flex justify-content-between">
+                            <div class="flex-grow-1 pe-3">
+                                <h5 class="card-title">Pore-Network Modelling of Gas Flow in Ultratight Porous Media
+                                </h5>
+                                <p class="small text-muted">EPSRC Project · Role: Research Assistant</p>
+                                <p class="small">
+                                    Upgraded HWU’s pore-network modelling package for simulating gas flow in ultra-tight
+                                    rocks.
+                                </p>
+                                <ul class="small">
+                                    <li>Model optimisation for tight-porosity transport.</li>
+                                    <li>Integration with continuum-scale constitutive relationships.</li>
+                                </ul>
+                            </div>
+                            <img src="assets/img/logos/epsrc.png" style="max-height:50px">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- HydraFLASH -->
+                <div class="col-lg-6">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body d-flex justify-content-between">
+                            <div class="flex-grow-1 pe-3">
+                                <h5 class="card-title">Thermodynamic Modelling of Hydrogen-containing Systems</h5>
+                                <p class="small text-muted">ETP Knowledge Exchange Fund · Role: Developer / Researcher
+                                </p>
+                                <p class="small">
+                                    Contributed to major upgrades of HydraFLASH, a commercial package for CO₂-,
+                                    hydrate-, and
+                                    hydrogen-containing systems.
+                                </p>
+                            </div>
+                            <img src="assets/img/logos/etp.png" style="max-height:60px">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- UK-China Newton Fund -->
+                <div class="col-lg-6">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body d-flex justify-content-between">
+                            <div class="flex-grow-1 pe-3">
+                                <h5 class="card-title">UK-China Joint Research and Innovation Partnership (Newton) Fund
+                                </h5>
+                                <p class="small text-muted">British Council £6.8k · Role: Principal Investigator</p>
+                                <p class="small">
+                                    Funded three-month research visit to Dalian University of Technology to establish
+                                    collaboration in gas hydrate science and geophysical modelling.
+                                </p>
+                                <ul class="small">
+                                    <li>Joint experiments + publications (ACS Nano, SE&F, etc.).</li>
+                                    <li>Ongoing long-term international partnership.</li>
+                                </ul>
+                            </div>
+                            <img src="assets/img/logos/britishcouncil.png" style="max-height:50px">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <!-- ============================================================= -->
+            <!-- SECTION: INDUSTRY & EARLY CAREER -->
+            <!-- ============================================================= -->
+            <h3 class="mt-5 mb-4">Industry & Early Career</h3>
+            <div class="row gy-4">
+
+                <!-- Reservoir Engineering -->
+                <div class="col-lg-6">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body d-flex justify-content-between">
+                            <div class="flex-grow-1 pe-3">
+                                <h5 class="card-title">Reservoir Engineering – Azar Oil Field</h5>
+                                <p class="small text-muted">Tavana Energy Kish Co. · Role: Reservoir Engineer</p>
+                                <p class="small">
+                                    Substantial contribution to an industrial project on reservoir rock/fluid properties
+                                    and EOR studies for the Azar oil field (SW Iran).
+                                </p>
+                                <ul class="small">
+                                    <li>Core analysis, reservoir fluid characterisation.</li>
+                                    <li>EOR screening and simulation support.</li>
+                                </ul>
+                                Click <a href="https://tavana-energy.com/" target="_blank">here</a> for more
+                                information.
+
+                            </div>
+                            <img src="assets/img/logos/tavanaenergy.png" style="max-height:75px">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Drilling Simulator -->
+                <div class="col-lg-6">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body d-flex justify-content-between">
+                            <div class="flex-grow-1 pe-3">
+                                <h5 class="card-title">Drilling Operation Simulator (C++)</h5>
+                                <p class="small text-muted">Sharif UPRI · Role: Software Developer</p>
+                                <p class="small">
+                                    Developed C++ modules (Qt platform) for a drilling simulation tool at Sharif
+                                    University
+                                    of Technology’s upstream research institute.
+                                </p>
+                                <ul class="small">
+                                    <li>Numerical modelling of drilling processes.</li>
+                                    <li>Interface and performance optimisation.</li>
+                                </ul>
+                            </div>
+                            <img src="assets/img/logos/sharif.jpg" style="max-height:95px">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
     </main>
 
     <footer id="footer" class="py-3 border-top">
-        <div class="container small text-center text-muted">
+        <div class="container text-center small text-white">
             &copy; <span id="year"></span> Mehrdad Vasheghani Farahani.
         </div>
     </footer>
